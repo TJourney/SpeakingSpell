@@ -1,6 +1,9 @@
 BUILDTOOL = msbuild
 
-APPDATA = /data/tjourney/final-fantasy-xiv-online/drive_c/users/tjourney/Application Data
+# Set YOUR FFXIV WINEPREFIX PATH here:
+WINEPREFIX = /data/tjourney/final-fantasy-xiv-online
+
+APPDATA = $(WINEPREFIX)/drive_c/users/tjourney/Application Data
 
 all: sampleplugin uidev
 
